@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	</head>
+	<body>
+		<nav class="mynavbar">
+		<img src="images/logo2.png">
+		<input type="button" id="myBtn" style="float:right" value="CART"></button>
+		</nav>
+		
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <span class="close">&times;</span>
+			  <h2 style="text-align:center">Your Cart</h2>
+			  <hr>
+			</div>
+			<div class="modal-body">
+				<table id="tablecart" style="width:100%">
+					<tr>
+						<th>Description</th>
+						<th>Quantity</th> 
+						<th>Price</th>
+					</tr>
+				</table>
+			  <hr>
+			  <p id="totalprice">Total <span style="color:blue ; font-size:25px" >$</span><span id="totalprice-span">0.00</span></p>
+			</div>
+			<div class="checkout"><button>PROCEED TO CHECKOUT</button></div>
+		  </div>
+		</div>
+		
+		<div class="carousel">
+		  <div class="mySlides fade">
+			<img src="images/slide1.jpg">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img src="images/slide2.jpg">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img src="images/slide3.jpg">
+		  </div>
+		  <div class="mySlides fade">
+			<img src="images/slide4.jpg">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div style="text-align: center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+		
+		<div class="product-title">
+			<span> S M A R T P H O N E S </SPAN> 
+		</div>
+		
+		<!-- PRODUCTS -->
+		<div id="products">
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	
+		<div class="siteFooterBar">
+			<hr style="border-color: #a100ff"> 
+			<div class="footer-content">
+				<img src="images/acnlogo.png" width="70px" height="70px">
+					<div class="foot">2020 © All Rights Reserved.</div>
+			</div>
+		</div>
+	</body>
+</html>

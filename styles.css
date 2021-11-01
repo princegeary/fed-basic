@@ -1,0 +1,307 @@
+body {
+   margin: 0;
+   padding: 0;
+   //background-image: linear-gradient(0deg, black, white, white, white);
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+.product-card {
+  width: 250px;
+  border: 5px solid #a100ff;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Roboto";
+  text-align: center;
+  background-color: white;
+}
+
+.product-image img {
+  width: 80%;
+  margin-top: 10%;
+  transition: transform 0.5s ease;
+}
+
+.product-image img:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
+}
+
+.product-card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #a100ff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.product-card button:active {
+  background-color: #fc887b;
+  color: #a100ff;
+}
+
+
+.price {
+  color: grey;
+  font-size: 30px;
+  margin: 0 0 10px 0 ;
+  padding: 0;
+  font-weight: "bold";
+}
+
+.phoneName {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* Slideshow container */
+.carousel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+.mySlides img{
+	width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+*.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.product-title{
+	color: #a100ff;
+	font-size: 30px;
+	text-align: center;
+	padding: 15px;
+	font-family: "Roboto";
+	font-weight: bold;
+	background-color: black;
+	margin: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 400px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: Arial;
+}
+
+.modal-body {
+	padding: 2px 16px;
+  font-family: Arial;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+#totalprice{
+	text-align: right;
+	font-size: 20px;
+}	
+
+#totalprice-span{
+	color: blue;
+	font-size: 30px;
+}
+
+.checkout button{
+	border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #a100ff;
+  cursor: pointer;
+  width: 400px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.checkout button:hover{
+	opacity: 0.7;
+}
+
+.mynavbar{
+	height: 70px;
+	width: 100%;
+	padding: 0;
+	border: 1px solid black;
+	background-color: black;
+	text-align: center;
+	margin: 0;
+}
+
+.mynavbar img{
+	height: 70px;
+	align: center;
+	margin: 0;
+}
+
+#myBtn{
+	margin-top: 15px;
+	margin-right: 25px;
+	height: 40px;
+	width: 70px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	border-color: 1px solid white;
+	background-color: black;
+	color: white;
+	border-radius: 5px 15px 5px 15px;
+}
+
+#myBtn:hover{
+  background-color: #111e6c;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.siteFooterBar{
+	background-color: black;
+}
+
+.foot {
+	display: inline-block; 
+	line-height: 90px; 
+	vertical-align: top;
+	color: #a100ff;
+	font-family: "Roboto"
+}
+
+footer-content { 
+	display: inline-block;  
+}
+
+.footer-content img{
+	margin: 10px 10px 10px 20px;
+}
